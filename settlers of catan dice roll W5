@@ -1,0 +1,10 @@
+import random
+#how many dice are there
+how_many_dice=input(How many dice are there?)
+#make sure how_many_dice is an int
+how_many_dice=int(how_many_dice)
+#make a six sided dice
+number_of_sides=6
+#print dice roll
+print_int(1,12)
+

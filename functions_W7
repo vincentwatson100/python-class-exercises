@@ -1,0 +1,15 @@
+def computepay(hours, rate):
+    overtime_hours = input('how many hours worked?')
+    overtime_rate = input('what is your rate?')
+
+
+    if hours<=overtime_hours:
+        pay='hours*rate'
+    else:
+        overtime_hours =  hours - overtime_hours  
+        pay = (overtime_hours * rate) + (overtime_hours*rate*overtime_rate)
+
+    return pay
+
+
+    
