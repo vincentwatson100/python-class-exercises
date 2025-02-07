@@ -1,5 +1,5 @@
 def chop(list):
-    list = ['a', 'none', 'd']
+    ist = ['a', 'none', 'd']
     del list[0:4:2]
     print(list)
 chop(['a', 'none', 'd'])
