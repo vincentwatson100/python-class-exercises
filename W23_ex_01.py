@@ -1,10 +1,21 @@
-file_dict = {}
-with open('mbox-short.txt', 'r')as file:
-        line = [line.strip()for line in file.readlines()]
-        file_content = (line)
-        count = line.count('From:')
+counts = dict()
+with open('mbox-short.txt')as file:
+        
+        
+        for line in file:
+                if line.startswith('From'):
+                        print(line.strip())
+                        words = line.split()
+                        for word in words:
+                                if word not in counts:
+                                        counts[word] = 1
+                                else:
+                                        counts[word] += 2
+                                print(words)
+                         
+print(counts)
 
-        print(f" From appears {count} times in the file.")
+ 
 
 
 
