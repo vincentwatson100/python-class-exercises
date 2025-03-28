@@ -1,10 +1,3 @@
-#lesson demonstration
-
-#y = 'Hello there'
-#dir(y)
-
-
-
 # Exercise 1: Create a class called `Person` that has the following attributes:
 # - name (string)
 # - age (integer)
@@ -13,7 +6,7 @@
 
 class person:
 
-    def_init(self)_:
+    def_init(self):
         self.name = 'Vincent'
         self.age = 13
         self.email = 'vincewat5000@gmail.com'  
@@ -22,4 +15,6 @@ class person:
         
 
 my_object = person
+
+
 my_object.introduce()
